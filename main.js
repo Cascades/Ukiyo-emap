@@ -11,8 +11,8 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 
 function create_markup(image_url, name, artist) {
     return `<div style=\"width: 300px; height: 300px;\"> \
-        <div style=\"position: absolute; width: 300px; height: 220px; display: flex; align-items: center; justify-content: center; border-radius: 20px 20px 0 0; overflow:hidden\"> \
-            <img style=\"height: 150%; width: 150%\" src=\"${image_url}\"/> \
+        <div style=\"position: absolute; width: 100%; height: 90%; border-radius: 20px 20px 0 0; overflow:hidden; object-fit: cover\"> \
+            <img style=\"position: absolute; display: block; width: 130%; height: auto; transform: scale(1.5)\" src=\"${image_url}\"/> \
         </div> \
         <div style=\"position: absolute; width: 300px; height: 80px; border-radius: 0 0 20px 20px; margin-top: 220px; overflow: hidden; background-color: white\"> \
             <p style=\"margin: 2%; font-family: Arial,Helvetica Neue,Helvetica,sans-serif; font-weight: bold \"> \
